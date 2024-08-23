@@ -1,8 +1,10 @@
-# React + Vite
+# Sistema de Login y Registro con JWT
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación simple que implementa un sistema de autenticación de usuarios mediante JWT (JSON Web Token). La aplicación permite a los usuarios registrarse, iniciar sesión y acceder a rutas protegidas una vez autenticados.
 
-Currently, two official plugins are available:
+## Características
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Registro de Usuario:** Permite a los usuarios crear una cuenta proporcionando un nombre de usuario y una contraseña.
+- **Inicio de Sesión:** Los usuarios pueden autenticarse proporcionando su nombre de usuario y contraseña. Al autenticarse con éxito, reciben un token JWT.
+- **Protección de Rutas:** Algunas rutas están protegidas y solo son accesibles si el usuario proporciona un token JWT válido.
+- **Validación de Token:** El token JWT es validado en cada solicitud a rutas protegidas, garantizando que solo los usuarios autenticados puedan acceder.
